@@ -1,0 +1,263 @@
+\usepackage{hyperref}
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+
+\title{TP Packet Tracer}
+\author{Leonardo Franco Mejia \\\href{francoleo1889@gmail.com}}
+\date{\today} % Inserta la fecha actual
+
+\begin{document}
+\maketitle
+\section{Packet Tracer}
+
+\subsection{Que es packet Tracer}
+
+Packet Tracer es una herramienta de simulación de redes desarrollada por Cisco Systems. Es utilizada principalmente para la enseñanza y el aprendizaje de redes de computadoras, permitiendo a los usuarios crear, configurar y simular redes complejas sin necesidad de hardware físico.  
+
+\subsection{Caracteristicas principales}
+\begin{itemize}
+\item \textbf{\textit{Simulación de dispositivos de red:}} Permite la simulación de routers, switches, hubs, PCs, servidores y otros dispositivos de red, con la capacidad de configurarlos como si fueran dispositivos reales.
+\item \textbf{\textit{Entorno interactivo:}} Los usuarios pueden diseñar redes arrastrando y soltando dispositivos, conectándolos y configurando sus características.
+\end{itemize}
+
+\subsection{Interfaz}
+
+\begin{itemize}
+\item \textbf{\textit{Barra de Menús:}} Archivo, Edición, Ver, Opciones, Ayuda: Ofrece acceso a las funciones estándar, como abrir, guardar archivos, configurar opciones de visualización y acceder a la ayuda.
+
+\item \textbf{\textit{Área de Trabajo:}}
+
+\textbf{\textit{Lienzo de Red:}} Es el espacio principal donde los usuarios pueden diseñar su red. Aquí se pueden arrastrar y soltar dispositivos, conectarlos y configurar sus propiedades.
+
+\textbf{\textit{Real-Time:}} Es el modo de trabajo principal donde se configuran y gestionan los dispositivos de la red en tiempo real.
+
+\textbf{\textit{Simulation Mode:}} Permite simular el comportamiento de la red en detalle, visualizando el flujo de datos, el recorrido de los paquetes y cómo interactúan los protocolos.
+
+\item \textbf{\textit{Paleta de dispositivos:}}
+
+\textbf{\textit{Categorías de Dispositivos:}} Aquí se pueden seleccionar diferentes dispositivos, como routers, switches, PCs, servidores, dispositivos de Internet of Things (IoT), entre otros.
+
+\textbf{\textit{Tipos de Conexiones:}} Se pueden elegir cables como Ethernet, fibra óptica, serie, y más para conectar los dispositivos.
+\end{itemize}
+
+\section{Dispositivos finales}
+Vamos a explorar solo 4 de los dispositivos finales ya que no vamos a ver todos durante el cursado.
+Para cambiar componentes primero tenemos que sacar el componente a reemplazar, y luego colocar el nuevo \textbf{\textit{con el dispositivo apagado}}, de lo contrario no me dejaria cambiar ningun componente
+
+\begin{enumerate}
+  \item \textbf{\textit{PC:}}
+Este dispositivo cuenta con 14 componentes a reemplazar o reemplazar solo cuando esta apagado, excepto los auriculates o el microfono. Este dispositivo permite el cambio de un componente a la vez solamente, ya que cuenta con una sola ranura.
+
+Los componentes más utilizados son:
+\begin{itemize}
+    \item \textbf{\textit{Conectores de telefonia}}
+    \item \textbf{\textit{Conectores de redes}}
+    \item \textbf{\textit{Conectores 4G, 3G}} (Para darle soporte telefónico)
+    \item \textbf{\textit{Poner una tapa}} (Para que no le entre tierra)
+\end{itemize}
+Además de agregar o reemplazar componentes, con este dispositivo podemos utilizar el navegador, la consola para compilar algo, podemos programar en Phyton, Java Scrypt.
+Cuenta con las siguientes secciones para interactuar:
+
+\begin{itemize}
+    \item \textbf{\textit{Physical}}
+    \item \textbf{\textit{Config}}
+    \item \textbf{\textit{Desktop}}
+    \item \textbf{\textit{Programming}}
+    \item \textbf{\textit{Atributes}}
+\end{itemize}
+
+\item \textbf{\textit{Laptop:}}
+Este dispositivo se gestiona de manera muy similar a la PC, lo único que cambia es que no le podemos agregar una tapa, ya que no existe. El resto de las cosas es idéntico. Por lo tanto cuenta con 13 componentes para utilizar.
+
+\item \textbf{\textit{Server:}}
+Este dispositivo al ser mas grande que los anteriores se le pueden agregar 2 componentes a la vez, ya que cuenta con 2 ranuras disponibles.
+Cuenta con 3 componentes menos, los cuales son los auriculares, microfono y por último la tarjeta PT-HOST-NM-1AM que se utiliza para servicio telefónico. Por lo tanto cuenta con 11 componentes disponibles. Tambien cuenta con una seccion de \textbf{\textit{Servicios}} que la diferencias de las demás.
+
+\item \textbf{\textit{Printer:}}
+Por ultimo analizaremos la impresora, este dispositivo cuenta con los mismos componentes que el servidor, lo que lo diferencia es que cuenta con una sola ranura para interactuar a la vez.
+Tambien tiene la diferencia de que cuenta con 3 secciones para interactuar los cuales son:
+
+\begin{itemize}
+    \item \textbf{\textit{Physical}}
+    \item \textbf{\textit{Config}}
+    \item \textbf{\textit{Atributes}}
+\end{itemize}
+
+\end{enumerate}
+
+\section{Dispositivos de red}
+Dentro de esta seccion veremos los Router y Switches que son los mas utilizados a lo largo de la materia.
+
+Tabla de Router:
+
+\begin{center}
+\resizebox{\textwidth}{!}{%
+ \begin{tabular}{||c c c c||} 
+ \hline
+ Modelo & Version IOS & Slots & Tipos de componentes \\ [0.5ex] 
+ \hline\hline
+ ISR4331 & 16.6.4 & 2 & NIM (2T, COVER, ES2-4), GLC (GE-100FX, LH-SMD, T, TE) \\ 
+ \hline
+ ISR4321 & 15.5(3)S5 & 2 & NIM (2T, COVER, ES2-4), GLC (GE-100FX, LH-SMD) \\
+ \hline
+ 1941 & 15.1(4)M4 & 2 & HWIC (1GE-SFP, 2T, 4ESW, 8A), WIC-COVER, GLC-LH-SMD \\
+ \hline
+ 2901 & 15.1(4)M5 & 4 & HWIC (1GE-SFP, 2T, 4ESW, 8A), WIC-COVER, GLC-LH-SMD \\
+ \hline
+ 2911 & 15.1(4)M5 & 4 & HWIC (1GE-SFP, 2T, 4ESW, 8A), WIC-COVER, GLC-LH-SMD \\
+ \hline
+ 819HG-4G-IOX & 15.5(1)T & - & - \\
+ \hline
+ 819HGW & 15.2(4)M4 & - & - \\
+ \hline
+ 829 & 15.5(3)M & - & GLC-T, GLC-TE \\
+ \hline
+ CGR1240 & 15.4(2)CG & 4 & 1240-COVER, ROUTER-ADAPTER, GLC-FE-100FX-RGD \\
+ \hline
+ Router-PT & 12.2(28) & 4 & PT-ROUTER-NM (1AM, 1CE, 1CFE, 1CGE, 1FFE, 1FGE, 1S, 1SS, COVER) \\
+ \hline
+ Router-PT-Empty & 12.2(28) & 10 & PT-ROUTER-NM (1AM, 1CE, 1CFE, 1CGE, 1FFE, 1FGE, 1S, 1SS, COVER) \\
+ \hline
+ 1841 & 12.4(15)T1 & 2 & HWIC (1GE-SFP, 2T, 4ESW, 8A, AP-AG-B), WIC (1AM, 1ENET, 1T, 2AM, 2T, COVER), GLC-LH-SMD \\
+ \hline
+ 2620XM & 12.2(28) & 3 & NM (1E, 1E2W, 1FE-FX, 1FE-TX, 1FE2W, 2E2W, 2FE2W, 2W, 4A/S, 4E, 8A/S, 8AM, COVER), WIC (1AM, 1T, 2AM, 2T, COVER) \\
+ \hline
+ 2621XM & 12.2(28) & 3 & NM (1E, 1E2W, 1FE-FX, 1FE-TX, 1FE2W, 2E2W, 2FE2W, 2W, 4A/S, 4E, 8A/S, 8AM, COVER), WIC (1AM, 1T, 2AM, 2T, COVER) \\
+ \hline
+ 2811 & 15.1(4)M4 & 5 & NM (1E, 1E2W, 1FE-FX, 1FE-TX, 1FE2W, 2E2W, 2FE2W, 2W, 4A/S, 4E, 8A/S, 8AM, COVER, ESW-161), HWIC (1GE-SFP, 2T, 4ESW, 8A, AP-AG-B), WIC (1AM, 1ENET, 1T, 2AM, 2T, COVER), GLC-LH-SMD \\
+ \hline
+\end{tabular}
+}
+\end{center}
+
+Tabla de Switchers:
+\begin{center}
+\resizebox{\textwidth}{!}{%
+ \begin{tabular}{||c c c c||} 
+ \hline
+ Modelo & Version IOS & Slots & Tipos de componentes \\ [0.5ex] 
+ \hline\hline
+ 2960-24TT & 15.0(2)SE4 & - & - \\ 
+ \hline
+ Switch-PT & 12.1(22)EA4 & 10 & PT-SWITCH-NM (1CE, 1CFE, 1CGE, 1FFE, 1FGE, COVER) \\
+ \hline
+ Switch-PT-Empty & 12.1(22)EA4 & 10 & PT-SWITCH-NM (1CE, 1CFE, 1CGE, 1FFE, 1FGE, COVER) \\
+ \hline
+ 3560-24PS & 12.2(37)SE1 & - & - \\
+ \hline
+ 3650-24PS & 16.3.2 & 2 & AC-POWER-SUPPLY, POWER-COVER-PLATE, GLC-LH-SMD, GLC-T, GLC-TE \\
+ \hline
+ IE-2000 & 15.2(1)EY & - & - \\
+ \hline
+ Bridge-PT & - & 2 & PT-SWITCH-NM (1CE, 1CFE, 1CGE, 1FFE, 1FGE, COVER) \\
+ \hline
+ 2950-24 & 12.1(22)EA4 & - & - \\
+ \hline
+ 2950T-24 & 12.1(22)EA4 & - & - \\
+ \hline
+\end{tabular}
+}
+\end{center}
+
+Tabla de Hubs:
+\begin{center}
+\resizebox{\textwidth}{!}{%
+ \begin{tabular}{||c c c||} 
+ \hline
+ Modelo & Slots & Tipos de componentes \\ [0.5ex] 
+ \hline\hline
+ Hub-PT & 10 & PT-REPEATER-NM (1CE, 1CFE, 1CGE, 1FFE, 1FGE, COVER) \\ 
+ \hline
+\end{tabular}
+}
+\end{center}
+
+\section{Cableado}
+
+\begin{itemize}
+\subsection{Console Cable (Cable de Consola)}
+
+\item Descripción: Es un cable que conecta la consola de un dispositivo de red (como un router o switch) a un puerto serial en un PC o laptop.
+\item Uso: Se utiliza para la configuración inicial y la administración local del dispositivo. No transmite tráfico de red, solo permite acceder a la línea de comandos del dispositivo.
+\item Conexión: Conecta el puerto de consola (CONSOLE) de un router o switch al puerto serial (RS-232) de un PC o laptop.
+
+\subsection{Copper Straight-Through (Cable Cobre Directo)}
+
+\item Descripción: Es un cable Ethernet de par trenzado utilizado para conectar dispositivos de diferentes tipos.
+\item Uso: Se utiliza comúnmente para conectar PCs, laptops, servidores o impresoras a switches o routers.
+\item Conexión: Conecta un puerto Ethernet de un dispositivo como un PC, laptop o impresora a un puerto Ethernet en un switch o router.
+
+\subsection{Copper Cross-Over (Cable Cobre Cruzado)}
+
+\item Descripción: Es un cable Ethernet de par trenzado cruzado utilizado para conectar dispositivos del mismo tipo.
+\item Uso: Se utiliza para conectar directamente dos PCs entre sí, o dos switches, o dos routers, sin necesidad de un switch intermedio.
+\item Conexión: Conecta los puertos Ethernet de dos dispositivos similares, como dos PCs, dos routers, o dos switches.
+
+\subsection{Fiber (Cable de Fibra Óptica)}
+
+\item Descripción: Es un cable de fibra óptica que se utiliza para conexiones de alta velocidad y largas distancias.
+\item Uso: Se utiliza principalmente para conectar switches o routers en redes donde la distancia o la velocidad es crítica.
+\item Conexión: Conecta los puertos de fibra óptica de dispositivos como switches o routers. Es ideal para enlaces troncales (backbones) de alta velocidad.Este cable se va a conectar si tengo algun componente con fibra, de lo contrario no se conectara.
+
+\subsection{Phone (Cable Telefónico)}
+
+\item Descripción: Es un cable que se utiliza para conectar dispositivos telefónicos o emular líneas telefónicas.
+\item Uso: Se utiliza para conectar teléfonos IP, adaptadores de telefonía o routers con capacidad de voz.
+\item Conexión: Conecta el puerto telefónico de un router o un adaptador a un teléfono IP o a un módulo de voz.
+
+\subsection{Coaxial (Cable Coaxial)}
+
+\item Descripción: Es un tipo de cable utilizado principalmente en redes más antiguas y en conexiones de TV por cable.
+\item Uso: Aunque no es tan común en las redes actuales, se puede utilizar para ciertas configuraciones que requieren conectividad coaxial.
+\item Conexión: Conecta dispositivos que utilizan puertos coaxiales, aunque su uso en redes modernas es limitado.
+
+\subsection{Serial DCE (Cable Serial DCE)}
+
+\item Descripción: Es un cable serial utilizado para conexiones WAN, donde el dispositivo DCE (Data Communications Equipment) controla la sincronización de la señal.
+\item Uso: Se utiliza para conectar routers en una red WAN simulada. El dispositivo conectado como DCE controla la velocidad de la conexión.
+\item Conexión: Conecta el puerto serial de un router configurado como DCE a otro router configurado como DTE.
+
+\subsection{Serial DTE (Cable Serial DTE)}
+
+\item Descripción: Es el complemento del cable serial DCE, donde el dispositivo DTE (Data Terminal Equipment) sigue la sincronización del DCE.
+\item Uso: Se utiliza junto con el cable DCE para establecer conexiones seriales WAN entre routers.
+\item Conexión: Conecta el puerto serial de un router configurado como DTE al DCE de otro router.
+
+\subsection{Octal (Cable Octal)}
+
+\item Descripción: Es un cable que permite la conexión simultánea de varios dispositivos de red a través de un solo puerto en un terminal server.
+\item Uso: Se utiliza principalmente en entornos donde se necesita gestionar múltiples dispositivos desde un único punto de acceso.
+\item Conexión: Conecta un puerto serial en un terminal server a varios dispositivos de red como routers o switches.
+
+\subsection{IoT Custom Cable (Cable Personalizado para IoT)}
+
+\item Descripción: Es un cable específico para dispositivos IoT (Internet of Things), permitiendo la conexión de estos dispositivos a la red.
+\item Uso: Se utiliza para conectar sensores, actuadores y otros dispositivos IoT a un controlador o gateway IoT.
+\item Conexión: Conecta dispositivos IoT con otros dispositivos IoT o con un controlador/gateway.
+
+\subsection{USB (Cable USB)}
+
+\item Descripción: Es un cable que permite la conexión de dispositivos USB para transferencias de datos y configuraciones.
+\item Uso: Se utiliza para conectar un PC o laptop a un dispositivo como un router, switch, o un dispositivo IoT que tenga un puerto USB.
+\item Conexión: Conecta el puerto USB de un dispositivo, como un router o switch, a un puerto USB en un PC o laptop para configuraciones o transferencia de datos.
+
+\subsection{Cable de eleccion automática}
+\item Uso: Este cable es de color naranja y me ayuda a elegir el cable correcto a utilizar.
+
+\end{itemize}
+
+Si el cable se pone de color verde es porque elegi bien el cable, y si se pone de color rojo sucede lo contrario.
+
+\section{Limitaciones}
+
+Para conectar mas de 2 pcs vimos que necesitamos de manera obligatoria un HUB, de lo contrario no se pueden conectar utilizando solo cables.
+
+\section{Referencias}
+
+\begin{itemize}
+\item Material utilizado: \href{https://ccnadesdecero.es/que-es-cisco-packet-tracer/}{Visita Cisco}
+
+\item Enlace a gitHub: https://github.com/lionmejia/Redes-1/new/main
+\end{itemize}
+
+\end{document}
